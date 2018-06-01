@@ -54,4 +54,8 @@ Construct a <em>Packet</em> with given #message, #origin and #receiver.
 		destination_ = destination;
 	}
 
+	public boolean atDestination(Node currentNode) {
+		return destination_.equals(currentNode.name_);
+	}
+
 }
